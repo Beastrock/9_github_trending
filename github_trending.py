@@ -19,8 +19,8 @@ def print_trending_repositories(trending_repositories):
     print("{:^72}\n{}|{:^55}|{:^13}".format("GITHUB TRENDING REPOSITORIES",
                                             "STARS", "URL", "OPEN ISSUES"))
     for trending_repository in trending_repositories:
-        print("{b[stargazers_count]:^5}|"
-              "{b[html_url]:55}|{b[open_issues]:^12}".format(b=trending_repository))
+        print("{tr[stargazers_count]:^5}|"
+              "{tr[html_url]:55}|{tr[open_issues]:^12}".format(tr=trending_repository))
 
 
 if __name__ == '__main__':
